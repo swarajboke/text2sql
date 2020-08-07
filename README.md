@@ -1,5 +1,7 @@
 # Text2SQL using pretrained models
 
+Swaraj bokey
+
 ## Parsing
 
 In order to convert JSON objects into langauge models use the [`parse_to_lm.py`](./parse_to_lm.py), usage:
