@@ -1,0 +1,121 @@
+<html>
+<title>
+  First Page
+</title>
+  <head>
+      <style> 
+      #tr{
+          padding-left: 1em;
+      }
+      #tr1{
+          padding-left: 1em;
+      }
+       #tr2{
+           background-color: aqua;
+           border-color: aqua;
+           font-size: 1em;
+           padding: 0.5em;
+           position: absolute;
+           top: 25%;
+           left: 35%;
+                      
+       }
+       
+       #tr3{
+        position: absolute;
+        top: 33%;
+           left: 34%;
+           font-size: 1em;
+       }
+       #blue{
+           color: aqua;
+       }
+       #list{
+           border: aqua solid 2px;
+           position: absolute;
+           top: 38%;
+           left: 35%;
+           font-size: 1em;
+           padding-left: 1.2em;
+           padding-right: 1.2em;
+           padding-top: 0.1em;
+           padding-bottom: 0.1em;
+           border-radius: 5px;
+       }
+       #text{
+        position: absolute;
+        top: 45%;
+           left: 35%;
+           border: aqua solid 2px;
+           border-radius: 5px;
+           text-align: center;
+       }
+       #sr{
+           position:relative ;
+           top: 35%;
+       }
+       #text1{
+           text-align: center;
+           padding-left: 8em;
+           padding-right: 8em;
+           position: absolute;
+           top: 55%;
+           left: 28%;
+           border: aqua solid 2px;
+           border-radius: 6px;
+       }
+        #sa{
+            background-color: aqua;
+            position: absolute;
+            top: 60%;
+            left: 37%;
+            padding-right: 3em;
+            padding-left: 3em;
+            border-radius: 6px;
+            border-color: aqua;
+
+        }
+        #mar{
+          padding-left: 2em;
+          font-size: 1.3em;
+        }
+        
+        #demo{
+            position: absolute;
+            top: 63%;
+            left: 38%;
+        }
+       </style>
+   
+  </head>
+  <body>
+  
+  <h1 id="tr"> Text2SQL for Software 2.0 Stack </h1>
+  <hr   style="height:2px;border-width:0;color:gray;background-color:gray"> </hr>
+  <p id="mar"> Convert your database to the appropriate JSON format as mentioned <b id="blue"> here </b> and ask it questions in natural language.</p>  
+
+  <button id="tr2">  Upload Schema JSON    </button> 
+  <b id="tr3"> OR select from cached samples </b>
+  <form>
+      <select name="drop" id="list">
+          <option value="Dataset"> Select Dataset </option>
+          <option value="Dataset1"> Dataset1 </option>
+          <option value="Dataset2"> Dataset2 </option>
+          <option value="Dataset3"> Dataset3 </option>
+        </select>
+   </form>
+      <input type="text" placeholder="Select Table" id="text"> </input>
+      <hr id="sr"> </hr>
+      <input type="text" placeholder="Ask Question" id="text1"> </input>
+      <button id="sa" onclick="fn()"> Ask </button>
+      <p id="demo"> </p> 
+    </body>
+    <script type="text/javascript">
+    function fn()
+    {
+        var text = "Hello World";
+        document.getElementById("demo").innerHTML= text;     
+    }
+
+    </script>
+</html>
